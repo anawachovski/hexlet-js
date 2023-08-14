@@ -1,4 +1,10 @@
-import _ from "lodash";
-
-console.log('Hello, Hexlet!');
-console.log(_.last(['one', 'two']));
+const printer = {
+	name: 'Hexlet',
+	print(greeting = 'hello') {
+	  console.log(`${greeting}, ${this.name}`);
+	}
+ };
+ 
+ // Прямой запуск
+ printer.print();
+ setTimeout(printer.print, 1000);
